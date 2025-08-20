@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-	--color-primary: #0e2a47;
+	--color-primary: #1890FF;
 	--color-accent: #f7d4c1;
+	--color-text-dark: #191A15;
+	--color-text-light: #888887;
+	--color-light-grey: #A6A6A6;
+	--color-light-background: #F9F8FE;
 }
 
 @layer base {
@@ -12,8 +16,11 @@
 
 	html,
 	body {
-		@apply m-0 p-0 text-[color:var(--color-primary)] bg-white font-['Montserrat',ui-sans-serif,system-ui,-apple-system,'Segoe_UI',Roboto,Helvetica,Arial,'Apple_Color_Emoji','Segoe_UI_Emoji'];
+		@apply m-0 p-0 text-[color:var(--color-text-dark)] bg-white font-["Space_Grotesk",ui-sans-serif,system-ui,-apple-system,'Segoe_UI',Roboto,Helvetica,Arial,'Apple_Color_Emoji','Segoe_UI_Emoji'];
 	}
 }
 
-
+svg{
+	width:  auto;
+    height: auto;
+}
