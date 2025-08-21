@@ -57,7 +57,7 @@
 </script>
 
 <section
-  class="px-10 flex flex-row items-center max-sm:flex-col"
+  class="px-20 flex flex-row items-center max-sm:flex-col"
   aria-labelledby="hero-heading"
 >
   <div class="w-2/3 space-y-5">
@@ -95,7 +95,7 @@
   </div>
 </section>
 
-<section id="partners" class="px-10 py-10" aria-labelledby="partners-heading">
+<section id="partners" class="px-20 py-10" aria-labelledby="partners-heading">
   <SectionTitle label="Our partners" />
   <div class="flex items-center text-light-grey space-x-2 py-10">
     {#each partners as partner}
@@ -111,7 +111,7 @@
 
 <section
   id="services"
-  class="px-10 py-10 bg-light-background"
+  class="px-20 py-10 bg-light-background"
   aria-labelledby="services-heading"
 >
   <SectionTitle label="Our Serices" />
@@ -125,7 +125,7 @@
   </div>
 </section>
 
-<section id="approach" class="px-10 py-10" aria-labelledby="approach-heading">
+<section id="approach" class="px-20 py-10" aria-labelledby="approach-heading">
   <SectionTitle label="Our Approach" />
 
   <div class="flex space-x-2 py-10">

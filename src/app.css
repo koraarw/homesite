@@ -7,6 +7,8 @@
 	--color-text-light: #888887;
 	--color-light-grey: #A6A6A6;
 	--color-light-background: #F9F8FE;
+	--color-footer: #161C28;
+	--color-footer-light: #222938;
 }
 
 @layer base {

@@ -1,5 +1,7 @@
 <script lang="ts">
   import favicon from "$lib/assets/favicon.svg";
+  import ContactForm from "$lib/components/ContactForm.svelte";
+  import Testimonies from "$lib/components/Testimonies.svelte";
   import "../app.css";
 
   let { children } = $props();
@@ -50,7 +52,7 @@
   class="sticky top-0 bg-white/80 backdrop-saturate-150 backdrop-blur z-10"
 >
   <nav
-    class="max-w-[1100px] mx-auto px-4 h-16 flex items-center justify-between"
+    class="px-20 h-16 flex items-center justify-between"
   >
     <a
       class="font-medium tracking-tight text-[color:var(--color-primary)] no-underline text-5xl"
@@ -87,11 +89,28 @@
 
 <main id="top">{@render children?.()}</main>
 
-<footer class="border-t border-slate-200 bg-slate-50 py-8">
-  <div class="max-w-[1100px] mx-auto px-4 flex items-center justify-between">
-    <div class="font-semibold">Koraa</div>
-    <div class="text-slate-500">
-      © {new Date().getFullYear()} Koraa. All rights reserved.
+<footer id="contact" class="border-t text-white bg-footer px-20 pt-10">
+  <section class="flex flex-row items-start justify-between">
+    <div class="w-full"><ContactForm /></div>
+    <div class="w-full"><Testimonies /></div>
+  </section>
+
+  <div class="py-10 flex items-start justify-between">
+    <div class="font-semibold space-y-2">
+      <p class="bg-primary text-text-dark px-2 py-1 rounded-lg text-xl">
+        Contact us:
+      </p>
+      <p class="text-lg font-light">Email: korra.rw@gmail.com</p>
+      <p class="text-lg font-light">Phone: 250-793149088</p>
+      <p class="text-lg font-light">Address: Nyarugenge, Kigali, Rwanda</p>
+    </div>
+    <div class="font-light space-y-4 mt-8">
+      <p>© {new Date().getFullYear()} Koraa. All rights reserved.</p>
+      <p>
+        <span>Terms and Conditions</span>
+        <span>-</span>
+        <span>Privacy Policy</span>
+      </p>
     </div>
   </div>
 </footer>
