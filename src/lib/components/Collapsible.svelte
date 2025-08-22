@@ -8,7 +8,9 @@
 <div class="">
   <h3 class="text-xl font-bold">
     <button aria-expanded={expanded} on:click={() => (expanded = !expanded)}
-      >{headerText}
+      class="text-start"
+      >
+      {headerText}
       {#if expanded}
         <IconifyIcon icon="icons8:angle-up" font-size={20} />
       {:else}
