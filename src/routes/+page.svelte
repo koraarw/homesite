@@ -6,11 +6,7 @@
   import archIllustration from "$lib/assets/arc.svg?raw";
   import ApproachIllustration from "$lib/assets/approach.svg?raw";
 
-  const click_book_consultation = () => {
-    console.log("Clicked book consultation");
-  };
-
-  let partners = ["Meta", "Linkedin", "BAG"];
+  const partners = ["G6 Real Estate"];
   const services = [
     {
       title: "Consulting",
@@ -54,6 +50,11 @@
         "We work together to provide future improvements based on requirements.",
     },
   ];
+  const handleScheduleMeeting = () => {
+    // @ts-ignore
+    Calendly.initPopupWidget({ url: "https://calendly.com/koraa-rw" });
+    return null;
+  };
 </script>
 
 <section
@@ -63,7 +64,9 @@
   <div class="w-2/3 space-y-5 max-md:w-full">
     <div class="space-y-5">
       <p class="text-4xl max-md:text-3xl">Integrate</p>
-      <p class="text-7xl font-extrabold max-md:text-3xl">Artificial Intelligence</p>
+      <p class="text-7xl font-extrabold max-md:text-3xl">
+        Artificial Intelligence
+      </p>
       <p class="text-4xl max-md:text-3xl">into your workflow</p>
     </div>
     <div class="w-1/3 max-md:w-3/4">
@@ -77,15 +80,30 @@
       </p>
     </div>
 
-    <div>
+    <div
+      class="space-y-5 flex flex-row items-start justify-start gap-5 max-md:flex-col max-md:gap-0"
+    >
+      <button
+        class="flex flex-row items-center justify-center no-underline gap-2 py-3.5 px-12 bg-footer text-white rounded-xl cursor-pointer hover:bg-footer/80 text-lg max-md:w-full max-md:py-2.5 max-md:text-base"
+        onclick={handleScheduleMeeting}
+      >
+        <span>Schedule Free Consultation</span>
+        <IconifyIcon
+          icon="pajamas:calendar"
+          font-size={30}
+          class="max-md:text-base"
+        />
+  </button>
+
       <a
-        class="w-fit flex flex-row items-center justify-center no-underline gap-2 py-3.5 px-12 bg-primary text-white rounded-xl cursor-pointer hover:bg-primary/80 text-lg max-md:w-full"
+        class="flex flex-row items-center justify-center no-underline gap-2 py-3.5 px-12 bg-primary text-white rounded-xl cursor-pointer hover:bg-primary/80 text-lg max-md:w-full max-md:py-2.5 max-md:text-base"
         href="#contact"
       >
         <span>Contact us</span>
         <IconifyIcon
           icon="streamline-sharp:mail-send-email-message"
           font-size={30}
+          class="max-md:text-base"
         />
       </a>
     </div>
@@ -95,15 +113,21 @@
   </div>
 </section>
 
-<section id="partners" class="px-20 max-md:px-5 py-10" aria-labelledby="partners-heading">
+<section
+  id="partners"
+  class="px-20 max-md:px-5 py-10"
+  aria-labelledby="partners-heading"
+>
   <h1 class="text-3xl rounded-lg cursor-pointer">Our partners</h1>
-  <div class="flex items-center text-light-grey space-x-2 py-10 max-md:flex-wrap">
+  <div
+    class="flex items-center text-light-grey space-x-2 py-10 max-md:flex-wrap"
+  >
     {#each partners as partner}
       <div
         class="flex flex-row items-center gap-2 justify-center hover:text-primary"
       >
         <IconifyIcon icon="mingcute:meta-fill" font-size={46} />
-        <span class="text-xl">{partner}</span>
+        <span class="text-3xl font-light">{partner}</span>
       </div>
     {/each}
   </div>
@@ -115,9 +139,13 @@
   aria-labelledby="services-heading"
 >
   <SectionTitle label="Our Serices" />
-  <div class="flex items-center space-x-2 py-10 max-md:flex-wrap max-md:space-y-5">
+  <div
+    class="flex items-center space-x-2 py-10 max-md:flex-wrap max-md:space-y-5"
+  >
     {#each services as service}
-      <div class="w-full bg-white p-5 h-[25vh] rounded-2xl border border-light-grey/50">
+      <div
+        class="w-full bg-white p-5 h-[25vh] rounded-2xl border border-light-grey/50"
+      >
         <p class="text-2xl font-bold py-3">{service.title}</p>
         <p class="text-justify">{service.subtitle}</p>
       </div>
@@ -125,7 +153,11 @@
   </div>
 </section>
 
-<section id="approach" class="px-20 py-10 max-md:px-5" aria-labelledby="approach-heading">
+<section
+  id="approach"
+  class="px-20 py-10 max-md:px-5"
+  aria-labelledby="approach-heading"
+>
   <SectionTitle label="Our Approach" />
 
   <div class="flex space-x-2 py-10">

@@ -6,26 +6,10 @@
     {
       id: 1,
       imageURL: "https://i.pravatar.cc/450?u=12",
-      message: "I love Korra, because of how they worked well with me",
+      message: "I love Koraa, because of how they worked well with me",
       organization: "G6 Real Estate",
       name: "Gentil Sugira",
       title: "CEO",
-    },
-    {
-      id: 2,
-      imageURL: "https://i.pravatar.cc/450?u=23",
-      message: "I love K",
-      organization: "Rwanda",
-      name: "KLKL Binco",
-      title: "CEO",
-    },
-    {
-      id: 3,
-      imageURL: "https://i.pravatar.cc/450?u=50",
-      message: "I love Korra, because of how they worked well with me love Korra, because of how they worked well with me love Korra, because of how they worked well with me love Korra, because of how they worked well with me love Korra, because of how they worked well with me",
-      organization: "Amazon",
-      name: "Shane Mazon",
-      title: "Developer",
     },
   ];
 
