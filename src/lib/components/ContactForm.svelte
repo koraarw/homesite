@@ -30,7 +30,7 @@
 
 <form
   on:submit|preventDefault={handleSubmit}
-  class="bg-footer-light flex flex-col justify-center p-10 rounded-2xl space-y-5"
+  class="bg-footer-light flex flex-col justify-center p-10 rounded-2xl space-y-5 max-md:p-5"
 >
   <h1 class="text-3xl">
     Schedule a <span class="text-primary">Free</span> consultation

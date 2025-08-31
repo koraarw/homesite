@@ -111,7 +111,7 @@
       <p class="bg-primary text-text-dark px-2 py-1 rounded-lg text-xl">
         Contact us:
       </p>
-      <p class="text-lg font-light">Email: korra.rw@gmail.com</p>
+      <p class="text-lg font-light">Email: koraa.rw@gmail.com</p>
       <p class="text-lg font-light">Phone: 250-793149088</p>
       <p class="text-lg font-light">Address: Nyarugenge, Kigali, Rwanda</p>
     </div>
