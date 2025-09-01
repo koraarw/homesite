@@ -57,14 +57,13 @@
   >
     <a
       class="font-medium tracking-tight text-[color:var(--color-primary)] no-underline text-5xl max-md:px-5"
-      href="#top">Koraa</a
+      href="/">Koraa</a
     >
     <ul class="list-none flex gap-4 m-0 p-0 text-lg max-md:hidden" role="list">
       <li>
         <!-- svelte-ignore a11y_invalid_attribute -->
-        <a
-          class="no-underline px-2 py-1 rounded hover:bg-slate-100"
-          href="#">Home</a
+        <a class="no-underline px-2 py-1 rounded hover:bg-slate-100" href="/"
+          >Home</a
         >
       </li>
       <li>
@@ -97,13 +96,6 @@
   id="contact"
   class="border-t text-white bg-footer px-20 pt-10 max-md:px-5"
 >
-  <section
-    class="flex flex-row items-start justify-between max-md:flex-col max-md:justify-start"
-  >
-    <div class="w-full"><ContactForm /></div>
-    <div class="w-full"><Testimonies /></div>
-  </section>
-
   <div
     class="py-10 flex items-start justify-between max-md:flex-col max-md:justify-start"
   >
@@ -118,9 +110,13 @@
     <div class="font-light space-y-4 mt-8">
       <p>© {new Date().getFullYear()} Koraa. All rights reserved.</p>
       <p>
-        <span>Terms and Conditions</span>
-        <span>-</span>
-        <span>Privacy Policy</span>
+        <a
+          class="no-underline py-1 rounded hover:underline"
+          href="/privacy"
+          ><span>Terms and Conditions</span>
+          <span>-</span>
+          <span>Privacy Policy</span></a
+        >
       </p>
     </div>
   </div>

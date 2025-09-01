@@ -6,6 +6,9 @@
   import archIllustration from "$lib/assets/arc.svg?raw";
   import ApproachIllustration from "$lib/assets/approach.svg?raw";
 
+  import ContactForm from "$lib/components/ContactForm.svelte";
+  import Testimonies from "$lib/components/Testimonies.svelte";
+
   const partners = ["G6 Real Estate"];
   const services = [
     {
@@ -177,4 +180,15 @@
       {/each}
     </div>
   </div>
+ 
+
 </section>
+
+ <div class="border-t text-white bg-footer px-20 p-10 max-md:px-5">
+    <section
+    class="flex flex-row items-start justify-between max-md:flex-col max-md:justify-start"
+  >
+    <div class="w-full"><ContactForm /></div>
+    <div class="w-full"><Testimonies /></div>
+  </section>
+  </div>
