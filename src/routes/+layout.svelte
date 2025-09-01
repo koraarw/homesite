@@ -62,26 +62,25 @@
     <ul class="list-none flex gap-4 m-0 p-0 text-lg max-md:hidden" role="list">
       <li>
         <!-- svelte-ignore a11y_invalid_attribute -->
-        <a class="no-underline px-2 py-1 rounded hover:bg-slate-100" href="/"
-          >Home</a
+        <a class="no-underline px-2 py-1 rounded hover:bg-slate-100" href="/">Home</a
         >
       </li>
       <li>
         <a
           class="no-underline px-2 py-1 rounded hover:bg-slate-100"
-          href="#services">Services</a
+          href="/#services">Services</a
         >
       </li>
       <li>
         <a
           class="no-underline px-2 py-1 rounded hover:bg-slate-100"
-          href="#approach">Our Approach</a
+          href="/#approach">Our Approach</a
         >
       </li>
       <li>
         <a
           class="no-underline px-2 py-1 rounded hover:bg-slate-100"
-          href="#contact">Contact us</a
+          href="/#contact">Contact us</a
         >
       </li>
     </ul>
